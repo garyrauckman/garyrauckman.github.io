@@ -1,8 +1,115 @@
-<html>
+<html lang="en-US">
   <head>
+    <title>Gary Rauckman Builders | Houses, Rentals, and More</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic' rel='stylesheet' type='text/css'>
+    <meta name="" content="Gary Rauckman Kathy Builders Rentals Townhomes homes remodeling lawrence topeka olathe kansas city kansas tools constuction contractors jayhawks apartments custom one story two three basement iving room decor home wood steel roof siding concrete 30 years trustworthy professional quality work" /><meta name="keywords" content="Gary Rauckman Kathy Builders Rentals Townhomes homes remodeling lawrence topeka olathe kansas city kansas tools constuction contractors jayhawks apartments custom one story two three basement iving room decor home wood steel roof siding concrete 30 years trustworthy professional quality work" />
+    <meta name="description" content="After more than 35 years of building in the Lawrence community, we still enjoy making you proud of your new home." />
   </head>
   <body>
-      Hello World
+    <section id="hero">
+      <div id="logo-container">
+        <div id="logo"></div>
+        <h1>Gary Rauckman <span>Builders</span></h1>
+      </div>
+
+      <nav id="menu">
+        <ul>
+          <li><a id="houses-link" href="#houses">Houses</a></li>
+          <li><a id="rentals-link" href="#rentals">Rentals</a></li>
+          <li><a id="about-link" href="#about">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="angle"></div>
+    </section>
+
+    <section id="intro" class="container">
+      <div class="box">
+        <p>Lawrence, Kansas is a community where home buyers know what they want and expect to find value. Gary Rauckman Builders is a company which gives personal attention to the home buyer and provides beautiful, quality, and affordable homes.</p>
+        <p>After more than 35 years of building in the Lawrence community, we still enjoy making you proud of your new home. Gary Rauckman Builders looks forward to giving you personal attention from planning to completion so that you will have a positive and enjoyable building experience.</p>
+        <p>We have the tools to design a home which will fit your unique needs and desires: a home that reflects what is important to you. If you want to design and build your dream home, then contact Gary Rauckman Builders today.</p>
+      </div>
+      <div class="box" id="right">
+        <div class="item"><p>Building</p></div>
+        <div class="item"><p>Rentals</p></div>
+        <div class="item"><p>Remodeling</p></div>
+
+      </div>
+    </section>
+
+    <div class="group"></div>
+
+    <section id="houses">
+      <div class="angle-top"></div>
+      <div class="container">
+        <h1>Houses</h1>
+        <p>What would you like to see in your new home? You have floor plan ideas and details that you have thought about. Now you need an experienced contractor who can bring it all to life.</p>
+        <p>We offer tours of homes we have constructed, and give you opportunities to visit with our satisfied clients. They will tell you that we are professionals at the business of building homes.</p>
+        <p>We partner with several design and interior architects who can design exactly what you want. They will direct you along the design path that makes the most sense for your family. We also have time-tested and updated building plans to offer you in specific budget ranges.</p>
+        <p>We are available to assist you with the financing segment of your new home purchase. We are connected with local financing institutions who care about your needs.</p>
+        <img src="img/houses.jpg"></img>
+      </div>
+      <div class="angle"></div>
+    </section>
+
+    <section id="rentals">
+      <div class="container">
+        <h1>Rentals</h1>
+        <p>Gary Rauckman Builders also has a number of Townhomes in Lawrence. We are proud of these properties, and work to keep them up-to-date and maintenance free. Gary’s wife Kathy is the general manager; she lists the properties under GK Management. You can contact her at <a href="mailto:gkrauckman@juno.com">gkrauckman@juno.com</a> for information.</p>
+        <p>We have a variety of Townhomes to suit your needs. They range from two bedroom, one car garage units all the way to four bedroom and two car garage units.  Remember, these are privately owned and managed. There are no management companies to deal with.</p>
+        <img src="img/rentals.jpg"></img>
+      </div>
+      <div class="angle"></div>
+    </section>
+
+    <section id="about">
+      <div class="angle-top"></div>
+      <div class="container">
+        <h1>About</h1>
+        <p>Gary and his family have made Lawrence their home for over 40 years, and have seen major growth through those years. Gary graduated from the University of Kansas with a degree in Mechanical Engineering, a background which has been invaluable in the construction industry.</p>
+        <p>Early on, Gary supervised a large volume home construction business that emphasized quality and affordability. This experience has helped shape what he now accomplishes in custom homes, townhomes, remodeling and small commercial projects.</p>
+        <p>Over the years, Gary Rauckman Builders has partnered with local contractors who care for and build trust with our clients. We are available to assist you in all aspects of building construction. This may include site plans, floor plans, exterior and interior design, land acquisition, and financing.</p>
+        <p>We agree with you that your new home is a financial investment to be proud of. Our desire is to serve you with quality craftsmanship in a timely manner. We want the best for you, and we want you to enjoy the building experience.</p>
+
+        <ul>
+          <li><a href="docs/rental-application.pdf">Rental Application</a></li>
+          <li><a href="docs/rental-guidelines.doc">Rental Guidelines</a></li>
+          <li><a href="docs/rental-lease.doc">Rental Lease</a></li>
+        </ul>
+
+      </div>
+    </section>
+
+    <section id="footer">
+      <ul>
+        <li>1144 N. 1100 Road, Lawrence, KS 66047</li>
+        <li>785-423-2700</li>
+        <li><a href="mailto:gkrauckman@juno.com">gkrauckman@juno.com</a></li>
+      </ul>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#houses-link").click(function() {
+          $('html, body').animate({
+              scrollTop: $("#houses").offset().top
+          }, 1000);
+        });
+        $("#rentals-link").click(function() {
+          $('html, body').animate({
+              scrollTop: $("#rentals").offset().top
+          }, 1000);
+        });
+        $("#about-link").click(function() {
+          $('html, body').animate({
+              scrollTop: $("#about").offset().top
+          }, 1000);
+        });
+      });
+    </script>
+
   </body>
 
 </html>

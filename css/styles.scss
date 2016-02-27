@@ -1,0 +1,493 @@
+/* ----- colors ----- */
+$blue: #166296;
+$white: #fff;
+$gray: #414042;
+
+/* ----- global ----- */
+html, body{
+  margin: 0;
+  font-size: 14px;
+}
+.container{
+  height: auto;
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+/* ----- hero ----- */
+#hero{
+  background-color: $blue;
+  background: url("./../img/hero.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  min-height: 500px;
+  z-index: 0;
+  #logo-container{
+    position: absolute;
+    margin: 0 auto;
+    top:30%;
+    left: 0;
+    right: 0;
+    display: inline;
+    width: 330px;
+    h1{
+      color: $white;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      float:left;
+      margin-left: 20px;
+      top:0;
+      font-size:1.5em;
+      letter-spacing: 2px;
+      span{
+        font-weight: 300;
+        display: block;
+      }
+    }
+    #logo{
+      background: url("./../img/logo.svg");
+      zoom: 1;
+      height: 100px;
+      width: 100px;
+      float:left;
+    }
+  }
+  #menu{
+    height: 80px;
+    min-width: 320px;
+    max-width: 360px;
+    width: auto;
+    background: darken($blue, 5%);
+    position: absolute;
+    margin: 0 auto;
+    bottom:30%;
+    left: 0;
+    right: 0;
+
+    ul{
+      padding: 0;
+      z-index: +2;
+      list-style: none;
+      margin: 0 auto;
+      top:50%;
+      transform: translateY(-50%);
+      position: relative;
+      width: 250px;
+      li{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $white;
+        display: inline;
+        margin-right: 15px;
+        font-size: 1.2em;
+        &:last-child{
+          margin-right: 0px;
+        }
+        a{
+          text-decoration: none;
+          color: $white;
+          cursor: pointer;
+          border-bottom: none;
+          padding-bottom: 0;
+        }
+        a:hover{
+          padding-bottom: 5px;
+          border-bottom: solid 1px $white;
+          transition: padding-bottom 0.25s linear;
+        }
+        a:active{
+          color: $white;
+        }
+        a:visited{
+          color: $white;
+        }
+      }
+    }
+
+
+    &:before{
+      z-index: +1;
+      content: '';
+      position: absolute;
+      right: 0;
+      top: -10px;
+      overflow-x: visible;
+      width: 100%;
+      height: 20px;
+      background: darken($blue, 5%);
+      -webkit-transform: skewY(2deg);
+      -moz-transform: skewY(2deg);
+      -ms-transform: skewY(2deg);
+      -o-transform: skewY(2deg);
+      transform: skewY(2deg);
+      -webkit-backface-visibility: hidden;
+    }
+    &:after{
+      z-index: +1;
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: -10px;
+      overflow-x: visible;
+      width: 100%;
+      height: 20px;
+      background: darken($blue, 5%);
+      -webkit-transform: skewY(2deg);
+      -moz-transform: skewY(2deg);
+      -ms-transform: skewY(2deg);
+      -o-transform: skewY(2deg);
+      transform: skewY(2deg);
+      -webkit-backface-visibility: hidden;
+    }
+  }
+}
+
+/* ----- intro -----*/
+#intro{
+  margin-top: 40px;
+  z-index: 3;
+  p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    margin-top:0px;
+    line-height: 1.8em;
+    color: $gray;
+  }
+
+  .item{
+    @media screen and (max-width: 768px){
+      margin-top: 40px;
+    }
+    text-transform: uppercase;
+    font-size: 1.2em;
+    height: 60px;
+    min-width: 280px;
+    max-width: 360px;
+    width: auto;
+    background: #f1f2f2;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    @media screen and (max-width: 768px){
+      margin-bottom: 40px;
+    }
+    &:nth-child(2){
+      background: #e6e7e8;
+      &:before{
+        z-index: +1;
+        content: '';
+        position: absolute;
+        right: 0;
+        top: -10px;
+        overflow-x: visible;
+        width: 100%;
+        height: 20px;
+        background: #e6e7e8;
+        -webkit-transform: skewY(2deg);
+        -moz-transform: skewY(2deg);
+        -ms-transform: skewY(2deg);
+        -o-transform: skewY(2deg);
+        transform: skewY(2deg);
+        -webkit-backface-visibility: hidden;
+
+      }
+      &:after{
+        z-index: +1;
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+        overflow-x: visible;
+        width: 100%;
+        height: 20px;
+        background: #e6e7e8;
+        -webkit-transform: skewY(2deg);
+        -moz-transform: skewY(2deg);
+        -ms-transform: skewY(2deg);
+        -o-transform: skewY(2deg);
+        transform: skewY(2deg);
+        -webkit-backface-visibility: hidden;
+      }
+    }
+    p{
+      text-align: center;
+      position: absolute;
+      top: 50%; transform: translateY(-50%);
+      margin: 0 auto; left: 0; right: 0;
+      z-index: +2 !important;
+      color: $blue;
+    }
+    &:before{
+      z-index: +1;
+      content: '';
+      position: absolute;
+      right: 0;
+      top: -10px;
+      overflow-x: visible;
+      width: 100%;
+      height: 20px;
+      background: #f1f2f2;
+      -webkit-transform: skewY(2deg);
+      -moz-transform: skewY(2deg);
+      -ms-transform: skewY(2deg);
+      -o-transform: skewY(2deg);
+      transform: skewY(2deg);
+      -webkit-backface-visibility: hidden;
+
+    }
+    &:after{
+      z-index: +1;
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: -10px;
+      overflow-x: visible;
+      width: 100%;
+      height: 20px;
+      background: #f1f2f2;
+      -webkit-transform: skewY(2deg);
+      -moz-transform: skewY(2deg);
+      -ms-transform: skewY(2deg);
+      -o-transform: skewY(2deg);
+      transform: skewY(2deg);
+      -webkit-backface-visibility: hidden;
+    }
+
+  }
+
+  .box#right{
+    margin-top: 40px;
+    @media screen and(max-width:767px){
+      margin-top: 0;
+    }
+  }
+  .box{
+    width: 50%;
+    float: left;
+    @media screen and (max-width: 767px){
+      width: 100%;
+    }
+  }
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ----- houses ----- */
+#houses, #about{
+  position: relative;
+  clear:both;
+  background: $blue;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  padding-bottom: 80px;
+
+  h1{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    color: $white;
+    padding-top: 80px;
+    text-transform: uppercase;
+  }
+  p{
+    color: $white;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 500px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 10px;
+    margin: 0 auto;
+    line-height: 1.8em;
+    margin-top: 0;
+  }
+  img{
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+  }
+
+  ul{
+    margin: 10px;
+    max-width: 570px;
+    margin: 20px auto;
+
+    li{
+      margin: 0;
+      display: inline;
+      font-family: 'Open Sans', sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 1.2em;
+      background: darken($blue, 5%);
+      color: $white;
+      &:hover{
+        background: darken($blue, 7%);
+        cursor: pointer;
+      }
+      a{
+        text-decoration: none;
+        color: $white;
+        cursor: pointer;
+      }
+      a:active{
+        text-decoration: none;
+        color: $white;
+      }
+      a:visited{
+        text-decoration: none;
+        color: $white;
+      }
+      a:hover{
+        text-decoration: none;
+        color: $white;
+      }
+      padding: 15px 18px;
+      @media screen and (max-width: 767px){
+        display: block;
+        margin: 20px 0px;
+      }
+
+    }
+  }
+
+}
+
+/* ----- rentals ----- */
+#rentals{
+  position: relative;
+  clear:both;
+  background: $white;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  padding-bottom: 80px;
+
+  h1{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    color: $gray;
+    padding-top: 20px;
+    text-transform: uppercase;
+  }
+  a{
+    color: $gray;
+    font-weight: 600;
+  }
+  a:hover{
+    color: $gray;
+    font-weight: 600;
+  }
+  a:active{
+    color: $gray;
+    font-weight: 600;
+  }
+  a:visited{
+    color: $gray;
+    font-weight: 600;
+  }
+  p{
+    color: $gray;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 500px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 10px;
+    margin: 0 auto;
+    line-height: 1.8em;
+    margin-top: 0;
+  }
+  img{
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+  }
+
+}
+
+#footer{
+  height: auto;
+  width: 100%;
+  background: darken($blue, 7%);
+  color: $white;
+  ul{
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    li{
+      color: $white;
+      font-family: 'Open Sans', sans-serif;
+      display: block;
+      padding: 10px;
+      a{
+        color: $white;
+      }
+      a:hover{
+        color: $white;
+      }
+      a:active{
+        color: $white;
+      }
+      a:visited{
+        color: $white;
+      }
+    }
+  }
+}
+
+/* ----- responsive triangles -----*/
+.angle:before {
+  z-index: 1;
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  overflow: visible;
+  width: 100%;
+  height: 40px;
+  background: $white;
+  -webkit-transform: skewY(2deg);
+  -moz-transform: skewY(2deg);
+  -ms-transform: skewY(2deg);
+  -o-transform: skewY(2deg);
+  transform: skewY(2deg);
+  -webkit-backface-visibility: hidden;
+}
+
+.angle-top:before {
+  z-index: 1;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: -20px;
+  overflow: visible;
+  width: 100%;
+  height: 40px;
+  background: $white;
+  -webkit-transform: skewY(2deg);
+  -moz-transform: skewY(2deg);
+  -ms-transform: skewY(2deg);
+  -o-transform: skewY(2deg);
+  transform: skewY(2deg);
+  -webkit-backface-visibility: hidden;
+}
